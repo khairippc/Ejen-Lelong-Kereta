@@ -53,7 +53,7 @@
     <!-- DIFFERENT -->
     <section class="section" style="background: var(--secondary-black)">
         <div class="container text-center">
-            <h2 class="sub-title">Kenapa Ini <span class="highlight">Berbeza</span> Dari Semua Yang Anda Pernah Cuba?</h2>
+            <h2 class="sub-title">Inilah Satu-Satunya Cara Buat Side Income Yang Tidak Perlukan Anda Jual Apa-Apa Pun</h2>
             <div class="content-block text-center" style="margin-top:30px">
                 <p>Ada banyak cara nak buat side income hari ini. Tapi kebanyakannya ada masalah yang sama — perlu modal besar, perlu stok barang, perlu bina audience dari kosong, atau perlu kerja 24 jam sehari.</p>
                 <p style="margin-top:20px; font-weight: 700; color: var(--gold)">Ejen lelong kereta lain ceritanya.</p>
@@ -66,7 +66,7 @@
     <!-- BENEFITS -->
     <section class="section">
         <div class="container">
-            <h2 class="sub-title">Apa Yang Anda Dapat Dari Ini?</h2>
+            <h2 class="sub-title">Satu Post. Satu Kereta. RM1,300 Masuk Akaun — Ulang Setiap Bulan</h2>
             <div class="content-block">
                 <p>Ramai yang cari side income tapi akhirnya stuck — entah tak ada masa, entah tak tahu nak jual apa, entah modal tak cukup. Ejen lelong kereta selesaikan semua masalah tu sekaligus.</p>
                 <p style="margin-top:20px">Kenapa mudah? Sebab anda jual sesuatu yang orang memang dah nak beli.</p>
@@ -86,7 +86,7 @@
     <!-- STATS -->
     <section class="section" style="background: linear-gradient(to bottom, #0a0a0a, #300000)">
         <div class="container text-center">
-            <h2 class="sub-title">Adakah Ini Betul-Betul Berfungsi?</h2>
+            <h2 class="sub-title">Lelaki Ini Jual 6 Kereta Dalam Sehari — Dan Dia Tak Pun Keluar Dari Rumah</h2>
             <p style="margin-bottom:40px">Saya faham kalau anda skeptikal. Semua orang pun begitu pada mulanya. Jadi tengok nombor ni dulu.</p>
             
             <div class="stats-grid">
@@ -111,7 +111,7 @@
     <!-- MARKET ANALYSIS -->
     <section class="section">
         <div class="container">
-            <h2 class="sub-title">Kalau Bidang Ini Bagus — Kenapa Tak Ramai Yang Tahu?</h2>
+            <h2 class="sub-title">Ada Orang Yang Sengaja Pastikan Anda Tak Tahu Tentang Ini</h2>
             <div class="content-block">
                 <p>Ini soalan yang paling penting. Dan jawapannya akan buat anda faham kenapa peluang ini masih terbuka luas untuk anda.</p>
                 <p style="margin-top:20px">Ejen-ejen lelong yang dah lama dalam bidang ni tahu satu perkara dengan sangat baik — <strong>selagi orang tak tahu, mereka terus dapat semua.</strong></p>
@@ -133,7 +133,7 @@
     <!-- BLAME -->
     <section class="section" style="background: var(--secondary-black)">
         <div class="container">
-            <h2 class="sub-title">Jadi Siapa Yang Patut Dipersalahkan?</h2>
+            <h2 class="sub-title">Bukan Salah Anda Tak Tahu — Ini Sebab Sebenarnya</h2>
             <div class="content-block">
                 <p>Kalau anda tak pernah dengar pun tentang peluang ini sebelum ni — itu bukan salah anda.</p>
                 <p style="margin-top:20px">Fikir balik. Dalam hidup anda, berapa ramai ejen lelong kereta yang anda pernah jumpa? Yang pernah cerita tentang cara kerja mereka? Yang pernah offer nak ajar anda? <strong>Hampir tiada, kan?</strong></p>
@@ -148,7 +148,7 @@
     <!-- TIMING -->
     <section class="section">
         <div class="container">
-            <h2 class="sub-title">Kenapa Sekarang Masa Terbaik Untuk Mulakan?</h2>
+            <h2 class="sub-title">Ekonomi Yang Porak-Peranda Ini Sebenarnya Menguntungkan Anda</h2>
             <div class="content-block">
                 <p>Keadaan ekonomi hari ini sebenarnya mewujudkan peluang yang jarang berlaku.</p>
                 <p style="margin-top:20px">Kos hidup meningkat. Kos pinjaman semakin tinggi. Kesan ketidaktentuan ekonomi global buatkan ramai yang tidak mampu lagi membayar ansuran kenderaan mereka. Akibatnya — bilangan kereta yang dilelong semakin meningkat setiap bulan.</p>
@@ -166,7 +166,7 @@
             <div class="about-card">
                 <div class="about-avatar">K</div>
                 <div>
-                    <h2 style="font-size: 1.5rem; margin-bottom: 10px;">Siapa Saya Dan Kenapa Anda Patut Dengar Saya?</h2>
+                    <h2 style="font-size: 1.5rem; margin-bottom: 10px;">Saya Bukan Pakar. Saya Cuma Orang Yang Dah Buktikan Sistem Ini Berfungsi</h2>
                     <p>Nama saya <strong>Khairi</strong>. Saya bukan pakar automotif. Saya bukan jurutera kereta. Saya cuma seorang yang suka belajar cara-cara buat duit — dan saya dah buktikan sendiri sistem ini berfungsi.</p>
                 </div>
             </div>
@@ -180,7 +180,7 @@
     <!-- HOW IT WORKS -->
     <section class="section">
         <div class="container">
-            <h2 class="sub-title">Macam Mana Sistem Ini Berfungsi?</h2>
+            <h2 class="sub-title">5 Langkah Dari Tiada Apa-Apa Kepada Komisen Pertama Anda</h2>
             <p style="margin-bottom:40px">Lebih mudah dari yang anda sangka. Ini gambaran ringkas proses yang akan anda ikuti:</p>
             
             <div class="process-step">
@@ -261,7 +261,7 @@
     <!-- FOMO -->
     <section class="section" style="padding-top: 0;">
         <div class="container">
-            <h2 class="sub-title">Jangan Bagi Orang Lain Ambil Peluang Ini Dulu</h2>
+            <h2 class="sub-title">Pintu Ini Masih Terbuka — Tapi Tidak Akan Selama-Lamanya</h2>
             <div class="content-block">
                 <p>Sekarang, bilangan ejen lelong kereta masih sikit. Pesaing masih terhad. Peluang masih terbuka luas.</p>
                 <p style="margin-top:20px">Tapi ini tidak akan kekal selamanya.</p>
