@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejen Lelong Pro - Buat RM1,300 Sebulan Jadi Ejen Lelong Kereta</title>
+    <title>Ejen Lelong Pro - Buat RM1,300 Sebulan Jadi Ejen Lelong Kereta!</title>
     <meta name="description" content="Kursus pertama di Malaysia tentang cara jadi ejen lelong kereta dan buat RM1,300 sebulan tanpa modal besar.">
     
     <!-- Google Fonts -->
