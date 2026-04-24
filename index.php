@@ -30,8 +30,8 @@
     <section class="hero animate">
         <div class="container">
             <div class="hero-badge">Kursus Pertama Di Malaysia</div>
-            <h1>Orang Lain Sorokkan <span class="highlight">Rahsia</span> Ini — Sebab Mereka Tak Mahu Anda Tahu Berapa Mudah Buat <span class="highlight">RM1,300</span> Sebulan</h1>
-            <p>Jual satu kereta sebulan je. Dari rumah. Tanpa modal besar. Tanpa tunjuk muka — cukup post kat FB, TikTok atau WhatsApp.</p>
+            <h1>Orang Lain Sorokkan <span class="highlight">Rahsia</span> Ini — Sebab Mereka Tak Mahu Anda Tahu Berapa Mudah Buat <span class="highlight">4 Angka Sebulan</span></h1>
+            <p>Boleh buat dari rumah. Tanpa perlu modal. Tanpa tunjuk muka — cukup post kat FB, TikTok atau WhatsApp.</p>
             <a href="#offer" class="btn btn-primary">Saya Nak Mulakan Sekarang →</a>
         </div>
     </section>
@@ -39,7 +39,7 @@
     <!-- INTRO -->
     <section class="section">
         <div class="container">
-            <h2 class="sub-title">Bayangkan sebentar.</h2>
+            <h2 class="sub-title">Bayangkan...</h2>
             <div class="content-block">
                 <p>Setiap bulan, anda post satu kereta kat FB atau TikTok. Dalam masa beberapa jam, phone anda mula berbunyi. Orang hubungi anda — bukan sebab anda pandai jual, tapi sebab harga kereta tu memang jauh lebih murah dari pasaran.</p>
                 <p style="margin-top:20px">Anda guide mereka. Mereka menang lelong. Dan <strong>RM1,300 masuk akaun anda.</strong></p>
@@ -89,6 +89,11 @@
             <h2 class="sub-title">Lelaki Ini Jual 6 Kereta Dalam Sehari — Dan Dia Tak Pun Keluar Dari Rumah</h2>
             <p style="margin-bottom:40px">Saya faham kalau anda skeptikal. Semua orang pun begitu pada mulanya. Jadi tengok nombor ni dulu.</p>
             
+            <div style="margin-bottom: 50px; display: flex; flex-direction: column; align-items: center;">
+                <img src="assets/images/testimoni-agent-1.png" alt="Testimoni Ejen Lelong" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,215,0,0.3);">
+                <p style="margin-top: 15px; font-weight: 700; color: var(--gold); font-size: 1.1rem;">Komisen Bersih RM7,800 Sehari!</p>
+            </div>
+
             <div class="stats-grid">
                 <div class="stat-card">
                     <span class="stat-value">6</span>
@@ -121,6 +126,11 @@
                 Ini lubuk duit mereka
             </div>
 
+            <div style="margin: 40px 0; display: flex; flex-direction: column; align-items: center;">
+                <img src="assets/images/testimoni-agent-2.png" alt="Testimoni Ejen Lelong 2" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,215,0,0.3);">
+                <p style="margin-top: 15px; font-weight: 700; color: var(--gold); font-size: 1.1rem;">Komisen Bersih RM2,600 Sehari!</p>
+            </div>
+
             <div class="content-block">
                 <p>Demand untuk kereta lelong semakin tinggi. Tapi bilangan ejen yang tahu cara buat kerja ni masih sikit. Jadi setiap kali ada orang nak beli kereta lelong, mereka yang sedia ada akan jadi pilihan pertama.</p>
                 <p style="margin-top:20px">Kenapa mereka mahu ajar orang lain? Ajar orang lain bermaksud mereka perlu berkongsi kek yang sama dengan lebih ramai orang.</p>
@@ -141,6 +151,11 @@
                 <p style="margin-top:20px">Mereka faham satu rahsia mudah — ramai orang nak beli kereta lelong, tapi tak tahu caranya. Dan selagi tak ada siapa yang ajar, merekalah yang akan terus dihubungi oleh setiap pembeli.</p>
                 <p style="margin-top:20px; font-weight: 700; font-size: 1.2rem;" class="red-highlight">Sistem tu menguntungkan mereka. Bukan anda.</p>
                 <p style="margin-top:20px">Saya nak ubah itu hari ini.</p>
+
+                <div style="margin: 40px 0; display: flex; flex-direction: column; align-items: center;">
+                    <img src="assets/images/testimoni-agent-3.png" alt="Testimoni Ejen Lelong 3" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,215,0,0.3);">
+                    <p style="margin-top: 15px; font-weight: 700; color: var(--gold); font-size: 1.1rem;">Komisen Bersih RM5,200 Sehari!</p>
+                </div>
             </div>
         </div>
     </section>
@@ -156,6 +171,11 @@
             </div>
             <div class="quote-box" style="border-left-color: var(--gold)">
                 Lebih banyak kereta dilelong + lebih ramai pembeli yang nak jimat = lebih banyak peluang komisen untuk anda. Kondisi ini tidak akan kekal selamanya. Manfaatkan selagi ada.
+            </div>
+
+            <div style="margin: 40px 0; display: flex; flex-direction: column; align-items: center;">
+                <img src="assets/images/testimoni-agent-4.png" alt="Testimoni Ejen Lelong 4" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,215,0,0.3);">
+                <p style="margin-top: 15px; font-weight: 700; color: var(--gold); font-size: 1.1rem;">Komisen Bersih RM5,200 Sehari!</p>
             </div>
         </div>
     </section>
