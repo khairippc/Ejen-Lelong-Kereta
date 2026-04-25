@@ -205,6 +205,10 @@
                     <p>Nama saya <strong>Khairi</strong>. Saya bukan pakar automotif. Saya bukan jurutera kereta. Saya cuma seorang yang suka belajar cara-cara buat duit — dan saya dah buktikan sendiri sistem ini berfungsi.</p>
                 </div>
             </div>
+             <div style="margin: 40px 0; display: flex; flex-direction: column; align-items: center;">
+                    <img src="assets/images/koleksi lelong.png" alt="Testimoni Ejen Lelong 3" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,215,0,0.3);">
+                    <p style="margin-top: 15px; font-weight: 700; color: var(--gold); font-size: 1.1rem;">Ini antara koleksi kereta lelong saya</p>
+                </div>
             <div class="content-block" style="margin-top:30px">
                 <p>Saya dah beli dan jual beberapa kereta lelong sendiri. Bila saya nampak ada ejen lelong kereta berjaya menjual 6 buah sehari dengan komisen RM1,300 setiap satu — saya sedar ini bukan sekadar peluang biasa.</p>
                 <p style="margin-top:20px">And bila saya dah tahu sistem ini berfungsi — saya rasa terpanggil untuk berkongsi. Bukan sorokkan macam yang orang lain buat.</p>
@@ -252,6 +256,10 @@
                     <p>Ini salah faham paling besar tentang kereta lelong. Ramai yang terus bayangkan kereta buruk, banyak rosak, tak boleh pakai.</p>
                     <p style="margin-top:10px">Hakikatnya — membeli kereta lelong tidak jauh berbeza dengan membeli kereta second hand biasa. Anda boleh tengok kereta tu dulu. Boleh bawa mekanik atau orang yang tahu pasal kereta untuk check.</p>
                     <p style="margin-top:10px">Malah, saya sendiri pernah beli kereta lelong yang kondisinya hampir macam baru — mileage tak sampai 2,700km, dan masih dalam warranty kilang 4 tahun. Harganya? Jauh lebih murah dari showroom.</p>
+                    <div style="margin: 40px 0; display: flex; flex-direction: column; align-items: center;">
+                    <img src="assets/images/under warranty.png" alt="Testimoni Ejen Lelong 3" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,215,0,0.3);">
+                    <p style="margin-top: 15px; font-weight: 700; color: var(--gold); font-size: 1.1rem;">Kereta masih bau kedai lagi!</p>
+                </div>
                     <p style="margin-top:10px">Itu bukan nasib baik. Itu hasil daripada tahu cara pilih kereta lelong yang betul — dan itulah yang akan saya ajar anda dalam kursus ini.</p>
                 </div>
             </div>
