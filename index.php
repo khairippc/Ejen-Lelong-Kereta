@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejen Lelong Pro - Buat RM1,300 Sebulan Jadi Ejen Lelong Kereta!</title>
+    <title>Kereta Method - Buat RM1,300 Sebulan Jadi Ejen Lelong Kereta!</title>
     <meta name="description" content="Kursus pertama di Malaysia tentang cara jadi ejen lelong kereta dan buat RM1,300 sebulan tanpa modal besar.">
     
     <!-- Google Fonts -->
@@ -21,7 +21,7 @@
 
 <header>
     <div class="container">
-        <div class="logo">EJEN LELONG <span style="color: var(--text-white)">PRO</span></div>
+        <div class="logo">KERETA <span style="color: var(--text-white)">METHOD</span></div>
     </div>
 </header>
 
@@ -269,7 +269,7 @@
     <!-- PRODUCT INCLUDED -->
     <section class="section">
         <div class="container">
-            <h2 class="sub-title">Apa Yang Ada Dalam Kursus Ejen Lelong Pro?</h2>
+            <h2 class="sub-title">Apa Yang Ada Dalam Kursus Kereta Method?</h2>
             <p>Anda akan dapat:</p>
             <ul class="list-items">
                 <li>Cara kenal pasti kereta lelong yang paling mudah dijual dan ada permintaan tinggi</li>
@@ -286,7 +286,7 @@
     <section id="offer" class="section">
         <div class="container">
             <div class="pricing-card">
-                <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Sertai Ejen Lelong Pro Hari Ini</h2>
+                <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Sertai Kereta Method Hari Ini</h2>
                 <p style="opacity: 0.8">Satu kali bayaran sahaja. Akses seumur hidup.</p>
                 
                 <div class="price-tag"><span>RM</span>100</div>
@@ -316,7 +316,7 @@
             <div style="margin-top: 60px;">
                 <p>Salam,</p>
                 <p style="font-weight: 800; font-size: 1.2rem; color: var(--gold); margin: 5px 0;">Khairi</p>
-                <p style="opacity: 0.8">Pengasas, Ejen Lelong Pro</p>
+                <p style="opacity: 0.8">Pengasas, Kereta Method</p>
             </div>
 
             <div class="quote-box" style="font-size: 1rem; border-left-color: var(--bright-red); background: rgba(139, 0, 0, 0.1);">
