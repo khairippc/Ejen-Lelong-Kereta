@@ -44,6 +44,11 @@
                 <p>Setiap bulan, anda post satu kereta kat FB atau TikTok. Dalam masa beberapa jam, phone anda mula berbunyi. Orang hubungi anda — bukan sebab anda pandai jual, tapi sebab harga kereta tu memang jauh lebih murah dari pasaran.</p>
                 <p style="margin-top:20px">Anda guide mereka. Mereka menang lelong. Dan <strong>RM1,300 masuk akaun anda.</strong></p>
             </div>
+
+            <div style="margin: 40px 0; display: flex; flex-direction: column; align-items: center;">
+                <img src="assets/images/lelong kereta murah.png" alt="Lelong Kereta Murah" style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,215,0,0.3);">
+                <p style="margin-top: 15px; font-weight: 700; color: var(--gold); font-size: 1.1rem; text-align: center;">Orang Tak Pandai Jual Pun Dapat Buat RM1,300 Setiap Kereta</p>
+            </div>
             <div class="quote-box">
                 Ini bukan mimpi. Ini yang ejen lelong kereta buat setiap hari — senyap-senyap, tanpa ramai yang tahu.
             </div>
@@ -57,6 +62,12 @@
             <div class="content-block text-center" style="margin-top:30px">
                 <p>Ada banyak cara nak buat side income hari ini. Tapi kebanyakannya ada masalah yang sama — perlu modal besar, perlu stok barang, perlu bina audience dari kosong, atau perlu kerja 24 jam sehari.</p>
                 <p style="margin-top:20px; font-weight: 700; color: var(--gold)">Ejen lelong kereta lain ceritanya.</p>
+
+             <div style="margin: 40px 0; display: flex; flex-direction: column; align-items: center;">
+                <img src="assets/images/gambar 2.png" alt="Lelong Kereta Murah" style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,215,0,0.3);">
+                <p style="margin-top: 15px; font-weight: 700; color: var(--gold); font-size: 1.1rem; text-align: center;">Hanya Post Sahaja Orang Berebut Nak Beli</p>
+            </div>
+
                 <p style="margin-top:20px">Ini merupakan kursus pertama di Malaysia yang ajar anda jadi ejen lelong kereta sepenuhnya secara online. Bukan teori semata-mata — tapi sistem langkah demi langkah yang boleh anda mulakan dari rumah, minggu ini juga.</p>
                 <p style="margin-top:20px">Anda tak perlu ada kereta. Tak perlu ada modal besar. Tak perlu ada pengalaman dalam bidang automotif. Yang anda perlukan hanyalah telefon, internet, dan sistem yang betul.</p>
             </div>
@@ -70,6 +81,10 @@
             <div class="content-block">
                 <p>Ramai yang cari side income tapi akhirnya stuck — entah tak ada masa, entah tak tahu nak jual apa, entah modal tak cukup. Ejen lelong kereta selesaikan semua masalah tu sekaligus.</p>
                 <p style="margin-top:20px">Kenapa mudah? Sebab anda jual sesuatu yang orang memang dah nak beli.</p>
+                <div style="margin: 40px 0; display: flex; flex-direction: column; align-items: center;">
+                <img src="assets/images/gambar 3.png" alt="Lelong Kereta Murah" style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,215,0,0.3);">
+                <p style="margin-top: 15px; font-weight: 700; color: var(--gold); font-size: 1.1rem; text-align: center;">Pembeli Berebut Cari Anda!</p>
+            </div>
                 <p style="margin-top:20px; font-size: 1.3rem; font-weight: 700;">Kereta lelong dijual <span class="highlight">30% hingga 70%</span> lebih murah dari harga pasaran. Bila harga dah jauh lebih rendah dari market — anda tak perlu pandai jual pun. Orang akan datang sendiri kepada anda.</p>
             </div>
             
@@ -184,7 +199,7 @@
     <section class="section" style="background: var(--secondary-black)">
         <div class="container">
             <div class="about-card">
-                <div class="about-avatar">K</div>
+                <img src="assets/images/gambar khairi.png" alt="Khairi" class="about-avatar" style="object-fit: cover; border: 2px solid var(--gold);">
                 <div>
                     <h2 style="font-size: 1.5rem; margin-bottom: 10px;">Saya Bukan Pakar. Saya Cuma Orang Yang Dah Buktikan Sistem Ini Berfungsi</h2>
                     <p>Nama saya <strong>Khairi</strong>. Saya bukan pakar automotif. Saya bukan jurutera kereta. Saya cuma seorang yang suka belajar cara-cara buat duit — dan saya dah buktikan sendiri sistem ini berfungsi.</p>
