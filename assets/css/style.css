@@ -50,7 +50,7 @@ h1, h2, h3, h4 {
 
 /* --- Header --- */
 header {
-    padding: 20px 0;
+    padding: 15px 0;
     background: rgba(0,0,0,0.8);
     backdrop-filter: blur(10px);
     position: sticky;
@@ -76,7 +76,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 
