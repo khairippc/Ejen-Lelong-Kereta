@@ -2,8 +2,16 @@
 // ==========================================
 // Meta Pixel & Conversions API (CAPI) Setup
 // ==========================================
-$pixel_id = '1888999021760511';
-$access_token = 'EAAc2RYwXIBMBRhG0mmbXMuBBI9p3nvsfLkCXh3DxFft4ZB8i1vj2ZCFdSSZB9ImZBpiO3tMGGun0ZAHZAV50ys8yG1IAkh2YSxLKU7caBY1D0fkEOZAZCvhLZAUsAunYRm2rD4GCncGaVwtW7xZAzT7CcJI779s2bAwuooaEHrqu1vhkcnaIeijvt87dGmLCo5AwssZAAZDZD';
+$pixels = [
+    [
+        'id' => '1888999021760511',
+        'token' => 'EAAc2RYwXIBMBRhG0mmbXMuBBI9p3nvsfLkCXh3DxFft4ZB8i1vj2ZCFdSSZB9ImZBpiO3tMGGun0ZAHZAV50ys8yG1IAkh2YSxLKU7caBY1D0fkEOZAZCvhLZAUsAunYRm2rD4GCncGaVwtW7xZAzT7CcJI779s2bAwuooaEHrqu1vhkcnaIeijvt87dGmLCo5AwssZAAZDZD'
+    ],
+    [
+        'id' => '899253609847108',
+        'token' => 'EAAgPHpSayDgBRnsNYhNyVWietKZC4IuOeiQPly5IMEGNZAIb17rbq5lwp0LTnv4tmP5zXvHEr7BlUZCgwKWuEYDYrl7RwG0wh20czeXqtKHjk2ZCCKcwGtn2rOIKm5PZBwuf74cWowDxJb3dZCaubjJ2oHQTnjGDgQ6yiynXkBag9YUNyNr72ZBkkayYZCAy4QZDZD'
+    ]
+];
 
 // Unique event ID for deduplicating browser and server PageView events
 $event_id = 'pageview_' . uniqid() . '_' . time();
@@ -22,34 +30,55 @@ if (function_exists('curl_init')) {
     $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? "https" : "http";
     $event_source_url = $protocol . "://" . ($_SERVER['HTTP_HOST'] ?? 'localhost') . ($_SERVER['REQUEST_URI'] ?? '/');
 
-    // Format payload for Meta Conversions API
-    $capi_payload = [
-        'data' => [
-            [
-                'event_name' => 'PageView',
-                'event_time' => time(),
-                'event_id' => $event_id,
-                'event_source_url' => $event_source_url,
-                'action_source' => 'website',
-                'user_data' => [
-                    'client_ip_address' => $user_ip,
-                    'client_user_agent' => $user_agent,
+    // Create curl multi handle for parallel execution
+    $mh = curl_multi_init();
+    $curl_handles = [];
+
+    foreach ($pixels as $pixel) {
+        // Format payload for Meta Conversions API
+        $capi_payload = [
+            'data' => [
+                [
+                    'event_name' => 'PageView',
+                    'event_time' => time(),
+                    'event_id' => $event_id,
+                    'event_source_url' => $event_source_url,
+                    'action_source' => 'website',
+                    'user_data' => [
+                        'client_ip_address' => $user_ip,
+                        'client_user_agent' => $user_agent,
+                    ]
                 ]
             ]
-        ]
-    ];
+        ];
 
-    $ch = curl_init("https://graph.facebook.com/v19.0/{$pixel_id}/events?access_token={$access_token}");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($capi_payload));
-    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 1); // Set timeout to 1 second so it doesn't block the user's page load
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
-    
-    // Execute request silently
-    $response = curl_exec($ch);
-    curl_close($ch);
+        $ch = curl_init("https://graph.facebook.com/v19.0/{$pixel['id']}/events?access_token={$pixel['token']}");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($capi_payload));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 1); // Set timeout to 1 second so it doesn't block the user's page load
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
+
+        curl_multi_add_handle($mh, $ch);
+        $curl_handles[] = $ch;
+    }
+
+    // Execute the handles in parallel
+    $active = null;
+    do {
+        $status = curl_multi_exec($mh, $active);
+        if ($active) {
+            curl_multi_select($mh, 0.1);
+        }
+    } while ($active && $status == CURLM_OK);
+
+    // Clean up handles
+    foreach ($curl_handles as $ch) {
+        curl_multi_remove_handle($mh, $ch);
+        curl_close($ch);
+    }
+    curl_multi_close($mh);
 }
 ?>
 <!DOCTYPE html>
@@ -81,12 +110,16 @@ if (function_exists('curl_init')) {
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '<?php echo $pixel_id; ?>');
+    <?php foreach ($pixels as $pixel): ?>
+    fbq('init', '<?php echo $pixel['id']; ?>');
+    <?php endforeach; ?>
     fbq('track', 'PageView', {}, {eventID: '<?php echo $event_id; ?>'});
     </script>
+    <?php foreach ($pixels as $pixel): ?>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=<?php echo $pixel_id; ?>&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=<?php echo $pixel['id']; ?>&ev=PageView&noscript=1"
     /></noscript>
+    <?php endforeach; ?>
     <!-- End Meta Pixel Code -->
 </head>
 <body>
