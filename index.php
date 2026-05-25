@@ -1,3 +1,57 @@
+<?php
+// ==========================================
+// Meta Pixel & Conversions API (CAPI) Setup
+// ==========================================
+$pixel_id = '1888999021760511';
+$access_token = 'EAAc2RYwXIBMBRhG0mmbXMuBBI9p3nvsfLkCXh3DxFft4ZB8i1vj2ZCFdSSZB9ImZBpiO3tMGGun0ZAHZAV50ys8yG1IAkh2YSxLKU7caBY1D0fkEOZAZCvhLZAUsAunYRm2rD4GCncGaVwtW7xZAzT7CcJI779s2bAwuooaEHrqu1vhkcnaIeijvt87dGmLCo5AwssZAAZDZD';
+
+// Unique event ID for deduplicating browser and server PageView events
+$event_id = 'pageview_' . uniqid() . '_' . time();
+
+// Send PageView to Meta Conversions API (Server-Side)
+if (function_exists('curl_init')) {
+    // Gather client headers and details
+    $user_ip = $_SERVER['REMOTE_ADDR'] ?? '';
+    $user_agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    
+    // Normalize IP addresses (IPv6 loopback/etc.)
+    if ($user_ip === '::1') {
+        $user_ip = '127.0.0.1';
+    }
+
+    $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? "https" : "http";
+    $event_source_url = $protocol . "://" . ($_SERVER['HTTP_HOST'] ?? 'localhost') . ($_SERVER['REQUEST_URI'] ?? '/');
+
+    // Format payload for Meta Conversions API
+    $capi_payload = [
+        'data' => [
+            [
+                'event_name' => 'PageView',
+                'event_time' => time(),
+                'event_id' => $event_id,
+                'event_source_url' => $event_source_url,
+                'action_source' => 'website',
+                'user_data' => [
+                    'client_ip_address' => $user_ip,
+                    'client_user_agent' => $user_agent,
+                ]
+            ]
+        ]
+    ];
+
+    $ch = curl_init("https://graph.facebook.com/v19.0/{$pixel_id}/events?access_token={$access_token}");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($capi_payload));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 1); // Set timeout to 1 second so it doesn't block the user's page load
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
+    
+    // Execute request silently
+    $response = curl_exec($ch);
+    curl_close($ch);
+}
+?>
 <!DOCTYPE html>
 <html lang="ms">
 <head>
@@ -16,6 +70,24 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/style.css?v=1.1">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '<?php echo $pixel_id; ?>');
+    fbq('track', 'PageView', {}, {eventID: '<?php echo $event_id; ?>'});
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=<?php echo $pixel_id; ?>&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -295,7 +367,7 @@
                     Pelaburan anda <span class="highlight">RM100</span> <i class="fas fa-arrow-right"></i> Komisen pertama anda <span class="highlight">RM1,300</span>
                 </div>
                 
-                <a href="https://tunkhairi.com/checkouts/kereta-method/" class="btn btn-primary btn-large">Saya Nak Mulakan Sekarang →</a>
+                <a href="https://tunkhairi.com/checkouts/kereta-method/" onclick="fbq('track', 'InitiateCheckout');" class="btn btn-primary btn-large">Saya Nak Mulakan Sekarang →</a>
                 <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">Tekan butang di atas → buat bayaran secara online → akses email anda</p>
             </div>
         </div>
