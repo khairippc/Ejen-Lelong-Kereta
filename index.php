@@ -400,7 +400,7 @@ if (function_exists('curl_init')) {
                     Pelaburan anda <span class="highlight">RM100</span> <i class="fas fa-arrow-right"></i> Komisen pertama anda <span class="highlight">RM1,300</span>
                 </div>
                 
-                <a href="https://tunkhairi.com/checkouts/kereta-method/" onclick="fbq('track', 'InitiateCheckout');" class="btn btn-primary btn-large">Saya Nak Mulakan Sekarang →</a>
+                <a href="https://tunkhairi.com/checkouts/kereta-method/" class="btn btn-primary btn-large">Saya Nak Mulakan Sekarang →</a>
                 <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">Tekan butang di atas → buat bayaran secara online → akses email anda</p>
             </div>
         </div>
