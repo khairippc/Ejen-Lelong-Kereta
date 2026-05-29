@@ -135,7 +135,7 @@ if (function_exists('curl_init')) {
     <section class="hero animate">
         <div class="container">
             <div class="hero-badge">Kursus Pertama Di Malaysia</div>
-            <h1>Orang Lain Sorokkan <span class="highlight">Rahsia</span> Ini — Sebab Mereka Tak Mahu Anda Tahu Berapa Mudah Buat <span class="highlight">4 Angka Sebulan</span></h1>
+            <h1>Orang Lain Sorokkan <span class="highlight">Rahsia</span> Ini — Sebab Mereka Tak Mahu Anda Tahu Betapa Mudah Buat <span class="highlight">4 Angka Sebulan</span></h1>
             <p>Boleh buat dari rumah. Tanpa perlu modal. Tanpa tunjuk muka — cukup post kat FB, TikTok atau WhatsApp.</p>
             <a href="#offer" class="btn btn-primary">Saya Nak Mulakan Sekarang →</a>
         </div>
